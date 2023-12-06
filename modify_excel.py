@@ -5,7 +5,7 @@ from datetime import datetime
 from difflib import SequenceMatcher
 
 
-file_path = './karyatama.xlsx'
+file_path = './sample.xlsx'
 df = pd.read_excel(file_path)
 
 print("\n\n")
@@ -149,7 +149,7 @@ print("\n\n")
 # kirim ke file yang baru
 
 
-output_file_path = './karyatama-result.xlsx'
+output_file_path = './sample-result.xlsx'
 df_result.to_excel(output_file_path, index=False)
 
 print("Success...")
