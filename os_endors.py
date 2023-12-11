@@ -1,11 +1,21 @@
 print("Script starting...")
 
+print("\n\n")
+print("ENDORSEMENT POLIS")
+print("-------------------")
+
+
 import pandas as pd
 from datetime import datetime
 from difflib import SequenceMatcher
 
+# input os_endors
+file_path = './sample/input.xlsx'
 
-file_path = './sample.xlsx'
+# output os_endors result
+output_file_path = './sample/output.xlsx'
+
+
 df = pd.read_excel(file_path)
 
 print("\n\n")
@@ -148,8 +158,6 @@ print("\n\n")
 # .................................................................................................
 # kirim ke file yang baru
 
-
-output_file_path = './sample-result.xlsx'
 df_result.to_excel(output_file_path, index=False)
 
 print("Success...")
